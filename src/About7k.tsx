@@ -95,7 +95,6 @@ Show favoritism to subjects of one culture, and watch as the loyalty of others r
         </Grid>
       </Box>
     </VStack>
-    //Test Test Test
   );
 }
 
