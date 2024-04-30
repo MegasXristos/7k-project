@@ -5,27 +5,27 @@ import NavigationBar from './NavigationBar'; // Adjust the path as necessary
 function About7k() {
   const [hoveredButton, setHoveredButton] = useState('');
 
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrollTop = document.documentElement.scrollTop;
-      const scrollHeight = document.documentElement.scrollHeight;
-      const clientHeight = document.documentElement.clientHeight;
-      const scrollPercentage = scrollTop / (scrollHeight - clientHeight);
-      const colorIntensity = Math.round(scrollPercentage * 255);
-      const greenComponent = Math.round(scrollPercentage * 128);
+  // useEffect(() => {
+  //   const handleScroll = () => {
+  //     const scrollTop = document.documentElement.scrollTop;
+  //     const scrollHeight = document.documentElement.scrollHeight;
+  //     const clientHeight = document.documentElement.clientHeight;
+  //     const scrollPercentage = scrollTop / (scrollHeight - clientHeight);
+  //     const colorIntensity = Math.round(scrollPercentage * 255);
+  //     const greenComponent = Math.round(scrollPercentage * 128);
 
-      // Set the background color with the adjusted green component
-      document.body.style.backgroundColor = `rgb(${colorIntensity}, ${greenComponent}, 0)`;
-    };
+  //     // Set the background color with the adjusted green component
+  //     document.body.style.backgroundColor = `rgb(${colorIntensity}, ${greenComponent}, 0)`;
+  //   };
 
     // Set initial background color to black
     document.body.style.backgroundColor = 'black';
 
-    window.addEventListener('scroll', handleScroll);
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
+  //   window.addEventListener('scroll', handleScroll);
+  //   return () => {
+  //     window.removeEventListener('scroll', handleScroll);
+  //   };
+  // }, []);
 
   return (
     <VStack spacing={10}>

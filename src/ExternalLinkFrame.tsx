@@ -12,9 +12,9 @@ const ExternalLinkFrame: React.FC<ExternalLinkFrameProps> = ({ url }) => {
     src={url}
     style={{
       width: '100%',
-      height: 'calc(100vh - 65px)', // Adjust 50px to your navigation bar's actual height
+      height: 'calc(100vh - 40px)', // Adjust 50px to your navigation bar's actual height
       border: 'none',
-      marginTop: '65px' // Adjust 50px to your navigation bar's actual height
+      marginTop: '40px' // Adjust 50px to your navigation bar's actual height
     }}
     title="External Content"
   />
